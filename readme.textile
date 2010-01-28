@@ -3,11 +3,11 @@ Right now the "placeholder attribute":http://dev.w3.org/html5/spec/Overview.html
 Just include the script and use it like so:
 
 bc.. $(function() {
-	$('input').placeholder();
+  $('input').placeholder();
 });
 
 p. Optionally, you can pass it a hex color if you want something other than the default:
 
 bc.. $(function() {
-	$('input').placeholder('#777777');
+  $('input').placeholder('#777777');
 });
