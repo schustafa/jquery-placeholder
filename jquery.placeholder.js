@@ -1,9 +1,9 @@
 (function($) {
 
 	$.fn.placeholder = function(color) {
-		var color = color || '#a9a9a9';
-		
 		if (!$.browser.webkit) {
+			var color = color || '#a9a9a9';
+
 			var $input_fields = $(this).filter('input[type=text]');
 			
 			$input_fields
@@ -33,4 +33,3 @@
 	};
 
 })(jQuery);
-

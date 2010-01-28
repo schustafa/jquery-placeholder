@@ -1,0 +1,13 @@
+Right now the "placeholder attribute":http://dev.w3.org/html5/spec/Overview.html#the-placeholder-attribute is only supported by Webkit-based browsers, so I made a simple script to enable placeholder behavior in all the other browsers.
+
+Just include the script and use it like so:
+
+bc.. $(function() {
+	$('input').placeholder();
+});
+
+Optionally, you can pass it a hex color if you want something other than the default:
+
+bc.. $(function() {
+	$('input').placeholder('#777777');
+});
