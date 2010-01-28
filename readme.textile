@@ -6,7 +6,7 @@ bc.. $(function() {
 	$('input').placeholder();
 });
 
-Optionally, you can pass it a hex color if you want something other than the default:
+p. Optionally, you can pass it a hex color if you want something other than the default:
 
 bc.. $(function() {
 	$('input').placeholder('#777777');
