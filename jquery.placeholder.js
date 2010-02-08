@@ -3,12 +3,13 @@
   $.fn.placeholder = function(color) {
     if (!$.browser.webkit) {
       var color = color || '#a9a9a9';
-
+      
       var $input_fields = $(this).filter('input[type=text]');
 			
-      $input_fields
-        .val($input_fields.attr('placeholder'))
-        .css('color', color);			
+      $input_fields.each(function() {
+        $(this).val($(this).attr('placeholder'))
+        $(this).css('color', color);
+      });
 				
       $input_fields.focus(function() {
         if ($(this).data("placeholder_text") == undefined)
