@@ -12,10 +12,7 @@
       });
 				
       $input_fields.focus(function() {
-        if ($(this).data("placeholder_text") == undefined)
-          $(this).data("placeholder_text", $(this).val());
-			
-        if ($(this).val() == $(this).data("placeholder_text")) {
+        if ($(this).val() == $(this).attr('placeholder')) {
           $(this)
             .val('')
             .css('color', '');
@@ -25,7 +22,7 @@
       $input_fields.blur(function() {
         if ($(this).val() == '') {
           $(this)
-            .val($(this).data("placeholder_text"))
+            .val($(this).attr('placeholder'))
             .css('color', color);			
         }
       });
