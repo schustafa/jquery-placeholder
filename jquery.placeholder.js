@@ -1,7 +1,8 @@
 (function($) {
 
   $.fn.placeholder = function(color) {
-    if (!$.browser.webkit) {
+    var test = document.createElement('input');
+    if (!('placeholder' in test)) {
       var color = color || '#a9a9a9';
       
       var $input_fields = $(this).filter('input[type=text]');
