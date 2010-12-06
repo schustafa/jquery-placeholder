@@ -8,8 +8,10 @@
       var $input_fields = $(this).filter('input[type=text]');
 			
       $input_fields.each(function() {
-        $(this).val($(this).attr('placeholder'))
-        $(this).css('color', color);
+        if($(this).val() == '') {
+          $(this).val($(this).attr('placeholder'))
+          $(this).css('color', color);
+        }
       });
 				
       $input_fields.focus(function() {
